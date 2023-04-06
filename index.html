@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>point and click adventure</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="mainTitle"></h1>
+    <div id="gameWindow">
+        <!--dialogue bar-->
+        <div id="dialogueBar" class="gameObject foreground">
+            <div id="dialogueContent">
+                <div id="Bar" class="gameObject foreground"></div>
+
+                <img id="hero" class="gameObject foreground" src="img/portairt.png" alt="main character">
+                <div id="mainCharacterSpeech" class="gameObject foreground speech-bubble">...</div>
+
+            </div>
+        </div>
+
+        <!--nature layer-->
+        <div class="Nature"><img src="img/Nature1.png" alt="Nature"></div>
+
+        <!--foreground layer-->
+        <div id="chest" class="gameObject foreground"></div>
+        <div id="well" class="gameObject foreground"></div>
+
+        <!--main character layer-->
+        <div id="mainCharacter" class="gameObject character">
+            <img src="img/animated-character-1-idle.gif" alt="main character">
+        </div>
+
+        <!--background layer-->
+        <div id="tilemap" class="gameObject background">
+            <img src="img/TileMap1.png" alt="tilemap">
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
